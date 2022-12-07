@@ -7,8 +7,6 @@ def preprocess_text(text, low=True, filter_puncts=True, lemmatize=True):
     # Проводим токенизацию текста по словам
 
     en_tokens = nltk.word_tokenize(text)
-    print ("Проводим токенизацию текста по словам:")
-    print (" ".join(en_tokens))
 
     # Фильтрация по стоп-словам
     from nltk.corpus import stopwords
